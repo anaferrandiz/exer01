@@ -62,7 +62,7 @@
  body {
      font-family: "Space Grotesk", sans-serif;
      /* font-family: "Inter", sans-serif; */
-     background-color: rgb(214, 214, 213);
+     background-color: rgb(220, 220, 218);
  }
 
  /* accesibilidad al navegar con tabulador */
@@ -123,6 +123,57 @@
  .nav__li:hover {
      color: yellow;
  }
+
+ /******************* FIN HEADER ********************/
+
+
+ /******************** INICIO MAIN *******************/
+ .main {
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .wrapper__principal {
+     width: 100%;
+     min-height: 85vh;
+     /* background-color: rgb(189, 187, 190); */
+ }
+
+ .section__principal {
+     width: 36%;
+     min-height: 100vh;
+     margin: 0 auto;
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .principal__grid {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(6, 1fr);
+     padding: .5rem 4rem;
+     justify-content: center;
+ }
+
+ .principal__p {
+     text-transform: uppercase;
+     font-weight: 200;
+     font-size: .8em;
+     text-align: justify;
+ }
+
+ .wrap__img {
+     width: 4em;
+ }
+
+ /******************** FIN MAIN *******************/
+
 
  /******************** INICIO FOOTER *********************/
 
@@ -207,7 +258,7 @@
      }
 
      .nav__li:first-child {
-         margin-top: -3rem;
+         margin-top: -7rem;
      }
 
      .header__btn {
@@ -229,9 +280,20 @@
      }
 
      .--ul__second {
-         align-items: center;
+         display: none;
      }
 
-   
+     .footer__nav {
+         align-items: flex-end;
+     }
 
+     .section__principal {
+         width: 90%;
+     }
+
+     .principal__grid {
+         grid-template-columns: repeat(1, 1fr);
+         place-items: center;
+         gap: .4rem;
+     }
  }

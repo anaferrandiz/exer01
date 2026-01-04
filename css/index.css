@@ -140,7 +140,6 @@
  .wrapper__principal {
      width: 100%;
      min-height: 85vh;
-     /* background-color: rgb(189, 187, 190); */
  }
 
  .section__principal {
@@ -151,6 +150,8 @@
      flex-flow: column nowrap;
      justify-content: center;
      align-items: center;
+
+
  }
 
  .principal__grid {
@@ -159,6 +160,7 @@
      grid-template-columns: repeat(6, 1fr);
      padding: .5rem 4rem;
      justify-content: center;
+
  }
 
  .principal__p {
@@ -166,11 +168,116 @@
      font-weight: 200;
      font-size: .8em;
      text-align: justify;
+     opacity: 0;
+     animation: textup 1.5s ease .5s forwards;
+ }
+
+ @keyframes textup {
+     from {
+         opacity: 0;
+         transform: translateY(35%);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
  }
 
  .wrap__img {
      width: 4em;
  }
+
+ /* Animaciones imágenes */
+
+ .--img__01 {
+     animation: moveimg01 1.5s ease .5s forwards;
+
+ }
+
+ @keyframes moveimg01 {
+     from {
+         transform: translate(-300%, 400%);
+     }
+
+     to {
+         transform: translate(0);
+     }
+ }
+
+
+ .--img__02 {
+     animation: moveimg02 1.5s ease .5s forwards;
+ }
+
+ @keyframes moveimg02 {
+     from {
+         transform: translate(-300%, -300%);
+     }
+
+     to {
+         transform: translate(0);
+     }
+ }
+
+
+ .--img__03 {
+     animation: moveimg03 1.5s ease-in-out .5s forwards;
+ }
+
+ @keyframes moveimg03 {
+     from {
+         transform: translate(-800%, -300%);
+     }
+
+     to {
+         transform: translate(0);
+     }
+ }
+
+ .--img__04 {
+     animation: moveimg04 1.5s ease .5s forwards;
+ }
+
+ @keyframes moveimg04 {
+     from {
+         transform: translate(450%, 200%);
+     }
+
+     to {
+         transform: translate(0);
+     }
+ }
+
+ .--img__05 {
+     animation: moveimg05 1.5s ease .5s forwards;
+ }
+
+ @keyframes moveimg05 {
+     from {
+         transform: translate(700%, -200%);
+     }
+
+     to {
+         transform: translate(0);
+     }
+ }
+
+ .--img__06 {
+     animation: moveimg06 1.5s ease .5s forwards;
+ }
+
+ @keyframes moveimg06 {
+     from {
+         transform: translate(500%, 500%);
+     }
+
+     to {
+         transform: translate(0);
+     }
+ }
+
+ /* fin animaciones imágenes */
 
  /******************** FIN MAIN *******************/
 

@@ -409,14 +409,14 @@
  }
 
 
-   /************************* MOBILE MODE *************************/
+ /************************* MOBILE MODE *************************/
 
-.div__mobile{
-    display: none;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
+ .div__mobile {
+     display: none;
+     flex-flow: row nowrap;
+     justify-content: center;
+     align-items: center;
+ }
 
  /************************* FIN MOBILE MODE *************************/
 
@@ -547,26 +547,42 @@
          gap: .4rem;
      }
 
-      .div__mobile{
-        display: flex;
-    }
+     .div__mobile {
+         display: flex;
+     }
 
-    .p__mobile{
-        color: rgb(0, 0, 0);
+     .p__mobile {
+         color: rgb(0, 0, 0);
          background-color: rgba(253, 253, 60, 0.802);
          text-transform: uppercase;
          margin-top: 1rem;
-    }
+     }
 
-    .--top__mobile{
-        margin-top: 5rem;
-    }
+     .--top__mobile {
+         margin-top: 5rem;
+     }
 
-    .principal__p{
-        width: 100%;
-        margin: 2rem;
-        margin-bottom: 5rem;
-    }
+     .principal__p {
+         width: 100%;
+         margin: 2rem;
+         margin-bottom: 5rem;
+     }
+
+     .div__mobile h2 {
+         animation: bajar 1s ease-in-out 1.5s forwards;
+         opacity: 0;
+     }
+
+     @keyframes bajar {
+         from {
+             opacity: 0;
+             transform: translateY(0);
+         }
+
+         to {
+             opacity: 1;
+             transform: translateY(20%);
+         }
+     }
+
  }
-
-

@@ -197,10 +197,12 @@
 
  @keyframes moveimg01 {
      from {
+        opacity: 0;
          transform: translate(-300%, 400%);
      }
 
      to {
+        opacity: 1;
          transform: translate(0);
      }
  }
@@ -212,10 +214,12 @@
 
  @keyframes moveimg02 {
      from {
+         opacity: 0;
          transform: translate(-300%, -300%);
      }
 
      to {
+        opacity: 1;
          transform: translate(0);
      }
  }
@@ -227,10 +231,12 @@
 
  @keyframes moveimg03 {
      from {
+         opacity: 0;
          transform: translate(-800%, -300%);
      }
 
      to {
+        opacity: 1;
          transform: translate(0);
      }
  }
@@ -241,10 +247,12 @@
 
  @keyframes moveimg04 {
      from {
+         opacity: 0;
          transform: translate(450%, 200%);
      }
 
      to {
+        opacity: 1;
          transform: translate(0);
      }
  }
@@ -255,10 +263,12 @@
 
  @keyframes moveimg05 {
      from {
+         opacity: 0;
          transform: translate(700%, -200%);
      }
 
      to {
+        opacity: 1;
          transform: translate(0);
      }
  }
@@ -269,10 +279,12 @@
 
  @keyframes moveimg06 {
      from {
+         opacity: 0;
          transform: translate(500%, 500%);
      }
 
      to {
+        opacity: 1;
          transform: translate(0);
      }
  }
@@ -476,6 +488,7 @@
          aspect-ratio: 31 / 9;
          /* 🔥 aquí está la magia */
          overflow: hidden;
+         opacity: 1;
      }
 
      .wrap__img img {
@@ -531,6 +544,10 @@
          opacity: 1;
          transform: scale(1.02, 1.02);
 
+     }
+
+     .wrap__img{
+        opacity: 0;
      }
 
      .imgs--a {

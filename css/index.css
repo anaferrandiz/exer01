@@ -333,6 +333,7 @@
  .section__projects {
      width: 100%;
      margin-top: 2rem;
+     margin-bottom: 5rem;
 
  }
 
@@ -354,16 +355,32 @@
      overflow: hidden;
      border-right: 1px solid black;
      padding: 1rem;
-    
+
  }
-.work__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 98%; 
+
+ .work__img img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: 50% 98%;
      border-radius: 1rem;
-}
-.work__item:nth-child(2) img {  object-position: 50% 50%;  }
+ }
+
+ .work__item:nth-child(2) img {
+     object-position: 50% 50%;
+ }
+
+ .work__item:nth-child(4) img {
+     object-position: 50% 44%;
+ }
+
+ .work__item:nth-child(5) img {
+     object-position: 50% 24%;
+ }
+
+ .work__item:nth-child(6) img {
+     object-position: 50% 44%;
+ }
 
  .work__info {
      padding: 2rem;
@@ -371,14 +388,14 @@
      flex-direction: column;
      justify-content: flex-start;
      align-items: flex-start;
-          font-size: 1.2rem;
+     font-size: 1.2rem;
 
  }
 
  .work__titulo {
      font-weight: 400;
      margin-bottom: 1rem;
-      background-color: var(--color-blau-links);
+     background-color: var(--color-blau-links);
  }
 
 
@@ -401,6 +418,41 @@
 
 
  /************************* FIN PÀGINA WORK *************************/
+
+
+
+
+ /**************************  INICI PÀGINA MÉS ************************* */
+
+ .wrapper__mes{
+    /* width: 90%; */
+    margin-top: 4rem;
+ }
+ .div__mes {
+     width: 98%;
+     /* margin-top: 4rem; */
+     padding: 0 1rem;
+     /* background-color: rgb(219, 183, 254); */
+
+ }
+
+ .p__mes {
+     font-weight: 400;
+     font-size: 2em;
+     text-transform: uppercase;
+     margin-top: 1rem;
+ }
+
+  .yellowcolor {
+     background-color:  #ffff00;
+ }
+
+
+ .bluecolor {
+     background-color: rgb(123, 168, 235);
+ }
+
+ /************************* FIN PÀGINA MÉS *************************/
 
 
 
@@ -606,6 +658,19 @@
          border-right: none;
      }
 
+     .work__item {
+         padding: 1rem 0;
+         margin-top: 2rem;
+     }
+
+     .wrapper__mes{
+        margin-bottom: 5rem;
+     }
+      .p__mes {
+  
+     font-size: 1.5em;
+     
+ }
  }
 
 

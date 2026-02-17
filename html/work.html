@@ -1,0 +1,169 @@
+<!-- 
+Este HTML contiene la página principal del sitio web.
+Estructura:
+- Encabezado
+- Barra de navegación
+- Contenido principal 
+-->
+
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="assets/title.png">
+
+
+    <!-- 🔴 CAMBIAR EN CADA PÁGINA -->
+    <title>Work | Alejandra Tomás</title>
+    <meta name="description" content="Projectes fotogràfics d'Alejandra Tomás">
+    <meta property="og:title" content="Work | Alejandra Tomás">
+    <meta property="og:description" content="Projectes fotogràfics d'Alejandra Tomás">
+    <meta property="og:image" content="https://anaferrandiz.github.io/exer01//assets/index/index_01.webp">
+    <!-- 🔴 FIN CAMBIAR -->
+
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="../css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- *************** INICIO HEADER *************** -->
+
+    <header class="header">
+
+        <h1 class="header__h1">
+            <a href="../index.html" title="Alejandra Tomás" target="_self">Alejandra Tomás</a>
+        </h1>
+
+
+        <button class="header__btn" aria-label="Abrir menú de navegación" aria-controls="nav-menu"
+            aria-expanded="false">&#9776;</button>
+
+        <nav class="header__nav">
+            <ul class="nav__ul">
+
+                <li class="nav__li">
+                    <a href="work.html" title="work" target="_self">work</a>
+                </li>
+
+                <li class="nav__li">
+                    <a href="mes.html" title="mes" target="_self">més</a>
+                </li>
+                <li class="nav__li">
+                    <a href="info.html" title="info" target="_self">info</a>
+                </li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <!-- *************** FIN HEADER *************** -->
+
+    <!-- *************** INICIO MAIN *************** -->
+
+    <main class="main main__aparecer" role="main">
+
+        <div class="wrapper__work">
+            <div class="div__work">
+                <p class="p__work">Alejandra Tomás és fotògrafa i artista visual. Treballa sense fronteres fixes,
+                    movent-se
+                    pel territori i més enllà per construir projectes que exploren la identitat, la memòria i la
+                    percepció
+                    visual.</p>
+            </div>
+
+            <section class="section__projects">
+
+                <article class="work__item">
+                    <picture class="work__img">
+                        <source srcset="../assets/work/index_01_active_s.webp" media="(max-width:1000px)">
+                        <img src="../assets/index/index_01_active.webp" alt="El parque del oeste - Alejandra Tomás"
+                            fetchpriority="high" decoding="async">
+                    </picture>
+                    <div class="work__info">
+                        <h2 class="work__titulo">El parque del oeste</h2>
+                        <p class="work__desc">"El Parc de l'Oest" no és només un lloc físic; és un estat d'ànim. Aquesta sèrie
+                                documental s'endinsa en el teixit quotidià d'una generació que habita els marges del
+                                temps i la ciutat.</p>
+                    </div>
+                </article>
+
+                <article class="work__item">
+                    <picture class="work__img">
+                        <source srcset="../assets/work/index_02_active_s.webp" media="(max-width:1000px)">
+                        <img src="../assets/index/index_02_active.webp" alt="Welcome to Bulgaria - Alejandra Tomás" loading="lazy">
+                    </picture>
+                    <div class="work__info">
+                        <h2 class="work__titulo">Welcome to Bulgaria</h2>
+                        <p class="work__desc">Descripció del projecte.</p>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+    </main>
+    <!-- *************** FIN MAIN *************** -->
+
+
+
+
+    <!-- *************** INICIO FOOTER *************** -->
+
+    <footer class="footer">
+
+        <nav class="footer__nav">
+
+            <ul class="footer__ul --ul__first">
+                <li class="footer__li">
+                    <a class="link__footer" href="https://www.instagram.com/ana.ferrandiz/" title="instagram"
+                        target="_blank">ig</a>
+                </li>
+
+                <li class="footer__li">
+                    <a class="link__footer" href="https://www.linkedin.com/in/ana--ferrandiz/" title="linkedin"
+                        target="_blank">linkedin</a>
+                </li>
+
+                <li class="footer__li">
+                    <a class="link__footer" href="https://github.com/anaferrandiz" title="github"
+                        target="_blank">github</a>
+                </li>
+            </ul>
+
+            <ul class="footer__ul --ul__second">
+                <li class="footer__li">exercici d'entrenament</li>
+
+                <li class="footer__li"> → València 2026 </li>
+            </ul>
+
+            <ul class="footer__ul --ul__third">
+                <li class="footer__li">
+                    <a class="link__footer" href="https://anaferrandiz.es/" title="ana ferrandiz" target="_blank">©
+                        Ana
+                        Ferràndiz</a>
+                </li>
+            </ul>
+
+        </nav>
+    </footer>
+
+    <!-- *************** FIN FOOTER *************** -->
+
+
+
+
+    <script src="../js/menu_responsive.js"></script>
+    <script src="../js/cursor.js"></script>
+</body>
+
+</html>

@@ -383,8 +383,12 @@
 
  }
 
+ .border__bottom{
+    border-bottom: 1px solid black;
+ }
+
  .work__item:last-child {
-     border-bottom: 1px solid black;
+     /* border-bottom: 1px solid black; */
  }
 
  .work__img {
@@ -404,22 +408,26 @@
      border-radius: 1rem;
  }
 
- .work__item:nth-child(2) img {
+ .img02 img {
      object-position: 50% 50%;
  }
 
- .work__item:nth-child(4) img {
+ .img03 img {
      object-position: 50% 44%;
  }
 
- .work__item:nth-child(5) img {
-     object-position: 50% 24%;
- }
-
- .work__item:nth-child(6) img {
+ .img04 img {
      object-position: 50% 44%;
  }
 
+ .img05 img {
+     object-position: 50% 44%;
+ }
+
+ .img06 img {
+    object-position: 50% 44%;
+ }
+ 
  .work__info {
      padding: 2rem;
      display: flex;

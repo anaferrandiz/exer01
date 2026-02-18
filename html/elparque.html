@@ -17,10 +17,10 @@ Estructura:
 
 
     <!-- 🔴 CAMBIAR EN CADA PÁGINA -->
-    <title>Més | Alejandra Tomás</title>
-    <meta name="description" content="Projectes fotogràfics d'Alejandra Tomás">
-    <meta property="og:title" content="Més | Alejandra Tomás">
-    <meta property="og:description" content="Projectes fotogràfics d'Alejandra Tomás">
+    <title>El Parque del Oeste | Alejandra Tomás</title>
+    <meta name="description" content="El Parque del oeste - Alejandra Tomás">
+    <meta property="og:title" content="El Parque del Oeste | Alejandra Tomás">
+    <meta property="og:description" content="El Parque del oeste - Alejandra Tomás">
     <meta property="og:image" content="https://anaferrandiz.github.io/exer01//assets/index/index_01.webp">
     <!-- 🔴 FIN CAMBIAR -->
 
@@ -79,35 +79,72 @@ Estructura:
 
         <div class="main__aparecer">
 
-            <div class="wrapper__mes">
-                <div class="div__mes">
-                    <p class="p__mes"><span class="yellowcolor" id="arrow__up">Alejandra Tomás</span> és fotògrafa i artista visual.
-                        Treballa sense fronteres fixes,
-                        movent-se pel territori i més enllà per construir projectes que exploren la identitat, la
-                        memòria i
-                        la percepció visual.
-                        La seva pràctica es situa entre el documental i l'experimental, amb un llenguatge intimista que
-                        posa
-                        el focus en les persones, els llocs i els moments que sovint passen desapercebuts. Cada projecte
-                        és
-                        fruit d'un procés de recerca i immersió en el context que retrata.
-                        Ha desenvolupat projectes personals i ha participat en exposicions col·lectives. El seu treball
-                        ha
-                        estat presentat a València, Barcelona i en diferents contextos internacionals.</p>
+            <section class="wrapper__project">
 
-                    <p class="p__mes"><span class="bluecolor">Ana Ferràndiz</span> és fotògrafa i programadora web amb
-                        base a València. La seva pràctica
-                        combina dues formes d'entendre el món: la imatge i el codi.
-                        Com a fotògrafa, ha desenvolupat projectes documentals per tot el món, des de l'India fins al
-                        Sàhara, passant per Senegal, Eslovàquia, Egipte i Portugal, sempre amb una mirada propera a les
-                        persones i els contextos que habiten.
-                        Paral·lelament, ha iniciat una trajectòria en el desenvolupament web, construint projectes
-                        propis
-                        que combinen disseny, funcionalitat i sensibilitat visual. Aquesta web n'és un exemple.</p>
+                <div class="div__project" id="arrow__up">
+                    <p class="p__project"><span class="bluecolor">"El Parque del oeste"</span> no és només un lloc
+                        físic; és un estat d'ànim. Aquesta
+                        sèrie documental s'endinsa en el teixit quotidià d'una generació que habita els marges del temps
+                        i la ciutat.</p>
                 </div>
 
-            </div>
 
+
+                <div class="carousel">
+
+                    <div class="slides">
+                        <picture class="slide">
+                            <source srcset="../assets/projects/parque/parque_01_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/parque/parque_01.webp" alt="El Parque del oeste image">
+                        </picture>
+
+                        <picture class="slide">
+                            <source srcset="../assets/projects/parque/parque_02_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/parque/parque_02.webp" alt="El Parque del oeste image">
+                        </picture>
+
+                        <picture class="slide">
+                            <source srcset="../assets/projects/parque/parque_03_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/parque/parque_03.webp" alt="El Parque del oeste image">
+                        </picture>
+
+                        <picture class="slide">
+                            <source srcset="../assets/projects/parque/parque_04_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/parque/parque_04.webp" alt="El Parque del oeste image">
+                        </picture>
+
+                        <picture class="slide">
+                            <source srcset="../assets/projects/parque/parque_05_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/parque/parque_05.webp" alt="El Parque del oeste image">
+                        </picture>
+
+                        <picture class="slide">
+                            <source srcset="../assets/projects/parque/parque_06_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/parque/parque_06.webp" alt="El Parque del oeste image">
+                        </picture>
+
+                        <picture class="slide">
+                            <source srcset="../assets/projects/parque/parque_07_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/parque/parque_07.webp" alt="El Parque del oeste image">
+                        </picture>
+
+                    </div>
+
+                    <!-- Zonas de clic izquierda / derecha -->
+                    <div class="tap-zone left-zone"></div>
+                    <div class="tap-zone right-zone"></div>
+
+                    <!-- Controles inferiores -->
+                    <div class="carousel-controls">
+                        <button class="btn prev" aria-label="Imatge anterior">‹</button>
+                        <div class="page-indicator">1 / 3</div>
+                        <button class="btn next" aria-label="Imatge següent">›</button>
+                    </div>
+
+                </div>
+
+
+            </section>
         </div>
     </main>
     <!-- *************** FIN MAIN *************** -->
@@ -162,6 +199,7 @@ Estructura:
 
     <script src="../js/menu_responsive.js"></script>
     <script src="../js/cursor.js"></script>
+    <script src="../js/carrusel.js"></script>
 </body>
 
 </html>

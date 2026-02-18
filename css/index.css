@@ -76,6 +76,10 @@
 
  /******************* HEADER ******************/
 
+ .principal__grid a {
+     display: contents;
+     /* Algo para arrelgar en Index mobile el tamaño de los contenedores de las imágenes*/
+ }
 
  .header {
      width: 100%;
@@ -128,10 +132,42 @@
      color: yellow;
  }
 
+ ::selection {
+     background-color: #fbfb87;
+     /* el color del subrayado */
+     color: black;
+     /* color del texto seleccionado */
+ }
+
  /******************* FIN HEADER ********************/
 
 
  /******************** INICIO MAIN *******************/
+
+ .flecha {
+     display: none;
+ }
+
+
+ .flechasi {
+     opacity: .7;
+     display: block;
+     width: 2rem;
+     display: block;
+     position: fixed;
+     bottom: 3rem;
+     right: 1rem;
+     z-index: 5;
+ }
+
+ @media (min-width: 1000px) {
+     .flechasi img {
+         transform: rotate(268deg);
+         /* ajusta los grados */
+     }
+ }
+
+
  .main {
      width: 100%;
      min-height: 100vh;
@@ -317,14 +353,16 @@
 
  /************************* INICI PÀGINA WORK *************************/
 
- .div__work {
+ .div__work,
+ .div__project {
      width: 98%;
      margin-top: 4rem;
      padding: 0 1rem;
      /* background-color: rgb(219, 183, 254); */
  }
 
- .p__work {
+ .p__work,
+ .p__project {
      font-weight: 400;
      font-size: 2em;
      text-transform: uppercase;
@@ -398,6 +436,9 @@
      background-color: var(--color-blau-links);
  }
 
+ .blue__color{
+    background-color: var(--color-blau-links);
+ }
 
  /* aparición página */
  .main__aparecer {
@@ -424,10 +465,11 @@
 
  /**************************  INICI PÀGINA MÉS ************************* */
 
- .wrapper__mes{
-    /* width: 90%; */
-    margin-top: 4rem;
+ .wrapper__mes {
+     /* width: 90%; */
+     margin-top: 4rem;
  }
+
  .div__mes {
      width: 98%;
      /* margin-top: 4rem; */
@@ -443,8 +485,8 @@
      margin-top: 1rem;
  }
 
-  .yellowcolor {
-     background-color:  #ffff00;
+ .yellowcolor {
+     background-color: #ffff00;
  }
 
 
@@ -455,6 +497,88 @@
  /************************* FIN PÀGINA MÉS *************************/
 
 
+ /************************* INICI PÀGINA PROJECTES *************************/
+
+
+ .wrapper__project{
+    width: 100%;
+    /* min-height: 100vh; */
+    margin-top: 6rem;
+ }
+
+  /* CARRUSEL */
+ .carousel {
+    /* background-color: rgba(253, 253, 60, 0.802); */
+     width: 50%;
+     position: relative;
+     overflow: hidden;
+     margin: 3rem auto 8rem auto;
+ }
+
+ .slides {
+     display: flex;
+     transition: transform 0.35s ease;
+     will-change: transform;
+     touch-action: pan-y;
+ }
+
+ .slide {
+     flex: 0 0 100%;
+     box-sizing: border-box;
+     text-align: center;
+ }
+
+
+ /* Zonas de clic invisibles */
+ .tap-zone {
+     position: absolute;
+     top: 0;
+     height: 100%;
+     width: 50%;
+     z-index: 2;
+ }
+
+ .left-zone {
+     left: 0;
+ }
+
+ .right-zone {
+     right: 0;
+ }
+
+ /* Controles */
+ .carousel-controls {
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: flex-start;
+     align-items: center;
+
+ }
+
+ .carousel .btn {
+     color: rgb(0, 0, 0);
+     padding: 6px 10px;
+     cursor: pointer;
+ }
+
+ /* indicador tipo 1/3 */
+ .page-indicator {
+     font-size: .9375rem;
+ }
+
+ .btn {
+     cursor: pointer;
+     z-index: 3;
+ }
+
+ @media (max-width:1200px) {
+     .carousel {
+         width: 100%;
+     }
+
+ }
+
+ /************************* FIN PÀGINA PROJECTES *************************/
 
 
  /******************** INICIO FOOTER *********************/
@@ -502,6 +626,19 @@
  /******************** MEDIA QUERIES *********************/
 
  @media (max-width: 1200px) {
+     .main__aparecer {
+         align-items: flex-start;
+     }
+
+     .flecha {
+         opacity: .4;
+         width: 2rem;
+         display: block;
+         position: fixed;
+         bottom: 3rem;
+         right: 1rem;
+         z-index: 5;
+     }
 
      .header {
          flex-wrap: wrap;
@@ -642,6 +779,10 @@
          display: block;
      }
 
+     .p__work {
+         font-size: 1.5em;
+     }
+
      .work__item {
          grid-template-columns: 1fr;
      }
@@ -658,21 +799,34 @@
          border-right: none;
      }
 
+     .work__img img {
+         border-radius: 1rem 1rem 1rem 1rem;
+     }
+
+
      .work__item {
          padding: 1rem 0;
          margin-top: 2rem;
      }
 
-     .wrapper__mes{
-        margin-bottom: 5rem;
+     .wrapper__mes {
+         margin-bottom: 5rem;
      }
-      .p__mes {
-  
-     font-size: 1.5em;
-     
- }
- }
 
+     .p__mes {
+
+         font-size: 1.5em;
+
+     }
+
+     .main.main__aparecer {
+         align-items: flex-start !important;
+     }
+
+     .p__project{
+        font-size: 1.5em;
+     }
+ }
 
 
 
@@ -795,6 +949,13 @@
          transform: translateY(0);
          transition: transform 1s ease, opacity 0.5s ease;
      }
+
+     .flechasi img {
+         transform: rotate(268deg);
+
+     }
+
+
  }
 
  @media (min-width: 1600px) {
@@ -802,4 +963,5 @@
      .imgs {
          width: 43vw;
      }
+
  }

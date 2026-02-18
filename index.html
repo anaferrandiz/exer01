@@ -74,21 +74,28 @@ Estructura:
 
     <main class="main" role="main">
 
+
+        <a href="#arrow__up" class="flecha" aria-label="Tornar amunt">
+            <img src="assets/flecha.png" alt="" aria-hidden="true">
+        </a>
+
         <div class="wrapper__principal">
 
             <section class="section__principal">
 
                 <div class="principal__grid">
 
-                    <div class="div__mobile">
-                        <h2 class="p__mobile --top__mobile">El parque del oeste</h2>
-                    </div>
+                    <a href="html/elparque.html" title="El Parque del oeste" target="_self">
+                        <div class="div__mobile" id="arrow__up">
+                            <h2 class="p__mobile --top__mobile">El parque del oeste</h2>
+                        </div>
+                        <picture class="wrap__img --img__01 --img__mobile">
+                            <source srcset="assets/index/index_01_s.webp" media="(max-width:1000px)">
+                            <img src="assets/index/index_01.webp" alt="El parque del oeste - Alejandra Tomás"
+                                fetchpriority="high" decoding="async">
+                        </picture>
+                    </a>
 
-                    <picture class="wrap__img --img__01 --img__mobile">
-                        <source srcset="assets/index/index_01_s.webp" media="(max-width:1000px)">
-                        <img src="assets/index/index_01.webp" alt="El parque del oeste - Alejandra Tomás"
-                            fetchpriority="high" decoding="async">
-                    </picture>
 
                     <div class="div__mobile">
                         <h2 class="p__mobile">Welcome to Bulgaria</h2>

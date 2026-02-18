@@ -71,99 +71,113 @@ Estructura:
 
     <!-- *************** INICIO MAIN *************** -->
 
-    <main class="main main__aparecer" role="main">
+    <main class="main" role="main">
 
-        <div class="wrapper__work">
-            <div class="div__work">
-                <p class="p__work">Alejandra Tomás és fotògrafa i artista visual. Treballa sense fronteres fixes,
-                    movent-se
-                    pel territori i més enllà per construir projectes que exploren la identitat, la memòria i la
-                    percepció
-                    visual.</p>
+        <a href="#arrow__up" class="flecha flechasi" aria-label="Tornar amunt">
+            <img src="../assets/flecha.png" alt="" aria-hidden="true">
+        </a>
+
+        <div class="main__aparecer">
+
+            <div class="wrapper__work">
+                <div class="div__work" id="arrow__up">
+                    <p class="p__work">Alejandra Tomás és fotògrafa i artista visual. Treballa sense fronteres fixes,
+                        movent-se
+                        pel territori i més enllà per construir projectes que exploren la identitat, la memòria i la
+                        percepció
+                        visual.</p>
+                </div>
+
+                <section class="section__projects">
+
+                    <a href="elparque.html" title="El Parque del oeste" target="_self">
+                        <article class="work__item">
+                            <picture class="work__img">
+                                <source srcset="../assets/work/index_01_active_s.webp" media="(max-width:1000px)">
+                                <img src="../assets/index/index_01_active.webp"
+                                    alt="El parque del oeste - Alejandra Tomás" fetchpriority="high" decoding="async">
+                            </picture>
+                            <div class="work__info">
+                                <h2 class="work__titulo">El parque del oeste</h2>
+                                <p class="work__desc">"El Parc de l'Oest" no és només un lloc físic; és un estat d'ànim.
+                                    Aquesta
+                                    sèrie
+                                    documental s'endinsa en el teixit quotidià d'una generació que habita els marges del
+                                    temps i la ciutat.</p>
+                            </div>
+                        </article>
+                    </a>
+
+                    <article class="work__item">
+                        <picture class="work__img">
+                            <source srcset="../assets/work/index_02_active_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/index/index_02_active.webp" alt="Welcome to Bulgaria - Alejandra Tomás"
+                                loading="lazy">
+                        </picture>
+                        <div class="work__info">
+                            <h2 class="work__titulo">Welcome to Bulgaria</h2>
+                            <p class="work__desc">"Welcome to Bulgaria" és una mirada sense filtres a la identitat d'un
+                                país
+                                en permanent transició.</p>
+                        </div>
+                    </article>
+
+                    <article class="work__item">
+                        <picture class="work__img">
+                            <source srcset="../assets/work/index_03_active_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/index/index_03_active.webp" alt="Giverola Summer - Alejandra Tomás"
+                                loading="lazy" decoding="async">
+                        </picture>
+                        <div class="work__info">
+                            <h2 class="work__titulo">Giverola Summer</h2>
+                            <p class="work__desc">"Giverola Summer" és un diari visual sobre el descans programat i la
+                                cara
+                                B de l'estiu a la costa mediterrània.</p>
+                        </div>
+                    </article>
+
+                    <article class="work__item">
+                        <picture class="work__img">
+                            <source srcset="../assets/work/index_04_active_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/index/index_04_active.webp" alt="Family Faiter - Alejandra Tomás"
+                                loading="lazy" decoding="async">
+                        </picture>
+                        <div class="work__info">
+                            <h2 class="work__titulo">Family Faiter</h2>
+                            <p class="work__desc">"Family Faiter" és un exercici visual d'autodescobriment i disrupció.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="work__item">
+                        <picture class="work__img">
+                            <source srcset="../assets/work/index_05_active_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/index/index_05_active.webp" alt="Un_Concept - Alejandra Tomás"
+                                loading="lazy" decoding="async">
+                        </picture>
+                        <div class="work__info">
+                            <h2 class="work__titulo">Un_Concept</h2>
+                            <p class="work__desc">"un_concept" és un assaig visual sobre la puresa, el vel i la connexió
+                                emocional.</p>
+                        </div>
+                    </article>
+
+                    <article class="work__item">
+                        <picture class="work__img">
+                            <source srcset="../assets/work/index_06_active_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/index/index_06_active.webp" alt="Polas - Alejandra Tomás" loading="lazy"
+                                decoding="async">
+                        </picture>
+                        <div class="work__info">
+                            <h2 class="work__titulo">Polas</h2>
+                            <p class="work__desc">Aquestes imatges són restes de nits llargues i matins lents. Un mapa
+                                de
+                                cares i llocs on el temps sembla aturar-se per permetre'ns, simplement, ser.</p>
+                        </div>
+                    </article>
+
+                </section>
             </div>
-
-            <section class="section__projects">
-
-                <article class="work__item">
-                    <picture class="work__img">
-                        <source srcset="../assets/work/index_01_active_s.webp" media="(max-width:1000px)">
-                        <img src="../assets/index/index_01_active.webp" alt="El parque del oeste - Alejandra Tomás"
-                            fetchpriority="high" decoding="async">
-                    </picture>
-                    <div class="work__info">
-                        <h2 class="work__titulo">El parque del oeste</h2>
-                        <p class="work__desc">"El Parc de l'Oest" no és només un lloc físic; és un estat d'ànim. Aquesta
-                            sèrie
-                            documental s'endinsa en el teixit quotidià d'una generació que habita els marges del
-                            temps i la ciutat.</p>
-                    </div>
-                </article>
-
-                <article class="work__item">
-                    <picture class="work__img">
-                        <source srcset="../assets/work/index_02_active_s.webp" media="(max-width:1000px)">
-                        <img src="../assets/index/index_02_active.webp" alt="Welcome to Bulgaria - Alejandra Tomás"
-                            loading="lazy">
-                    </picture>
-                    <div class="work__info">
-                        <h2 class="work__titulo">Welcome to Bulgaria</h2>
-                        <p class="work__desc">"Welcome to Bulgaria" és una mirada sense filtres a la identitat d'un país
-                            en permanent transició.</p>
-                    </div>
-                </article>
-
-                <article class="work__item">
-                    <picture class="work__img">
-                        <source srcset="../assets/work/index_03_active_s.webp" media="(max-width:1000px)">
-                        <img src="../assets/index/index_03_active.webp" alt="Giverola Summer - Alejandra Tomás"
-                            loading="lazy" decoding="async">
-                    </picture>
-                    <div class="work__info">
-                        <h2 class="work__titulo">Giverola Summer</h2>
-                        <p class="work__desc">"Giverola Summer" és un diari visual sobre el descans programat i la cara
-                            B de l'estiu a la costa mediterrània.</p>
-                    </div>
-                </article>
-
-                <article class="work__item">
-                    <picture class="work__img">
-                        <source srcset="../assets/work/index_04_active_s.webp" media="(max-width:1000px)">
-                        <img src="../assets/index/index_04_active.webp" alt="Family Faiter - Alejandra Tomás"
-                            loading="lazy" decoding="async">
-                    </picture>
-                    <div class="work__info">
-                        <h2 class="work__titulo">Family Faiter</h2>
-                        <p class="work__desc">"Family Faiter" és un exercici visual d'autodescobriment i disrupció.</p>
-                    </div>
-                </article>
-
-                <article class="work__item">
-                    <picture class="work__img">
-                        <source srcset="../assets/work/index_05_active_s.webp" media="(max-width:1000px)">
-                        <img src="../assets/index/index_05_active.webp" alt="Un_Concept - Alejandra Tomás"
-                            loading="lazy" decoding="async">
-                    </picture>
-                    <div class="work__info">
-                        <h2 class="work__titulo">Un_Concept</h2>
-                        <p class="work__desc">"un_concept" és un assaig visual sobre la puresa, el vel i la connexió
-                            emocional.</p>
-                    </div>
-                </article>
-
-                <article class="work__item">
-                    <picture class="work__img">
-                        <source srcset="../assets/work/index_06_active_s.webp" media="(max-width:1000px)">
-                        <img src="../assets/index/index_06_active.webp" alt="Polas - Alejandra Tomás" loading="lazy"
-                            decoding="async">
-                    </picture>
-                    <div class="work__info">
-                        <h2 class="work__titulo">Polas</h2>
-                        <p class="work__desc">Aquestes imatges són restes de nits llargues i matins lents. Un mapa de
-                            cares i llocs on el temps sembla aturar-se per permetre'ns, simplement, ser.</p>
-                    </div>
-                </article>
-
-            </section>
         </div>
     </main>
     <!-- *************** FIN MAIN *************** -->

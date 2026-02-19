@@ -589,6 +589,43 @@
  /************************* FIN PÀGINA PROJECTES *************************/
 
 
+
+ /* ************************ PÀGINA INFO *************************/
+
+
+.div__redes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div__redes a{
+    text-align: center;
+    background-color:  #fbfb87;
+}
+
+ @media (max-width: 300px){
+    .main__info, .div__redes{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .p__info{
+        margin-bottom: 2rem;
+    }
+
+    .div__redes{
+        gap: 1rem;
+    }
+ }
+ /******************** FIN PÀGINA INFO *********************/
+
+
+
+
+
  /******************** INICIO FOOTER *********************/
 
  .footer {
@@ -959,7 +996,7 @@
      }
 
      .flechasi img {
-         transform: rotate(268deg);
+         /* transform: rotate(268deg); */
 
      }
 

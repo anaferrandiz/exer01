@@ -1,5 +1,5 @@
 <!-- 
-Este HTML contiene la página Info del sitio web.
+Este HTML contiene la página Polas del sitio web.
 Estructura:
 - Encabezado
 - Barra de navegación
@@ -17,11 +17,11 @@ Estructura:
 
 
     <!-- 🔴 CAMBIAR EN CADA PÁGINA -->
-    <title>Info | Alejandra Tomás</title>
-    <meta name="description" content="Projectes fotogràfics d'Alejandra Tomás">
-    <meta property="og:title" content="Info | Alejandra Tomás">
-    <meta property="og:description" content="Info - Alejandra Tomás">
-    <meta property="og:image" content="https://anaferrandiz.github.io/exer01//assets/index/index_01.webp">
+    <title>Polas | Alejandra Tomás</title>
+    <meta name="description" content="Polas - Alejandra Tomás">
+    <meta property="og:title" content="Polas | Alejandra Tomás">
+    <meta property="og:description" content="Polas - Alejandra Tomás">
+    <meta property="og:image" content="https://anaferrandiz.github.io/exer01//assets/index/index_06.webp">
     <!-- 🔴 FIN CAMBIAR -->
 
     <meta property="og:type" content="website">
@@ -71,24 +71,75 @@ Estructura:
 
     <!-- *************** INICIO MAIN *************** -->
 
-    <main class="main main__info" role="main">
+    <main class="main" role="main">
 
-        <!-- <a href="#arrow__up" class="flecha" aria-label="Tornar amunt">
+        <a href="#arrow__up" class="flecha" aria-label="Tornar amunt">
             <img src="../assets/flecha.png" alt="" aria-hidden="true">
-        </a> -->
+        </a>
 
         <div class="main__aparecer">
 
-            <div class="wrapper__info">
-                <p class="p__info">Vols parlar amb nosaltres? Envia'ns un missatge.</p>
+            <section class="wrapper__project">
 
-                <div class="div__redes">
-                    <a href="https://www.instagram.com/alejandra__tomas" title="Instagram Alejandra" target="_blank" rel="noopener noreferrer">instagram Alejandra</a>
-
-                    <a href="https://www.instagram.com/ana.ferrandiz" title="Instagram Ana" target="_blank" rel="noopener noreferrer">instagram Ana</a>
+                <div class="div__project" id="arrow__up">
+                    <p class="p__project"><span class="bluecolor">Polas.</span> Aquestes imatges són restes de nits llargues i matins lents. Un
+                                    mapa
+                                    de
+                                    cares i llocs on el temps sembla aturar-se per permetre'ns, simplement, ser.</p>
                 </div>
-            </div>
 
+
+
+                <div class="carousel">
+
+                    <div class="slides">
+                        <picture class="slide">
+                            <source srcset="../assets/projects/polas/polas_01_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/polas/polas_01.webp" alt="Un_Concept">
+                        </picture>
+
+                        <picture class="slide">
+                            <source srcset="../assets/projects/polas/polas_02_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/polas/polas_02.webp" alt="Un_Concept">
+                        </picture>
+
+                        <picture class="slide">
+                            <source srcset="../assets/projects/polas/polas_03_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/polas/polas_03.webp" alt="Un_Concept">
+                        </picture>
+
+                        <picture class="slide">
+                            <source srcset="../assets/projects/polas/polas_04_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/polas/polas_04.webp" alt="Un_Concept">
+                        </picture>
+
+                        <picture class="slide">
+                            <source srcset="../assets/projects/polas/polas_05_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/polas/polas_05.webp" alt="Un_Concept">
+                        </picture>
+
+                        <picture class="slide">
+                            <source srcset="../assets/projects/polas/polas_06_s.webp" media="(max-width:1000px)">
+                            <img src="../assets/projects/polas/polas_06.webp" alt="Un_Concept">
+                        </picture>
+
+                    </div>
+
+                    <!-- Zonas de clic izquierda / derecha -->
+                    <div class="tap-zone left-zone"></div>
+                    <div class="tap-zone right-zone"></div>
+
+                    <!-- Controles inferiores -->
+                    <div class="carousel-controls">
+                        <button class="btn prev" aria-label="Imatge anterior">‹</button>
+                        <div class="page-indicator">1 / 3</div>
+                        <button class="btn next" aria-label="Imatge següent">›</button>
+                    </div>
+
+                </div>
+
+
+            </section>
         </div>
     </main>
     <!-- *************** FIN MAIN *************** -->
@@ -143,6 +194,7 @@ Estructura:
 
     <script src="../js/menu_responsive.js"></script>
     <script src="../js/cursor.js"></script>
+    <script src="../js/carrusel.js"></script>
 </body>
 
 </html>

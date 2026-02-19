@@ -383,8 +383,8 @@
 
  }
 
- .border__bottom{
-    border-bottom: 1px solid black;
+ .border__bottom {
+     border-bottom: 1px solid black;
  }
 
  .work__item:last-child {
@@ -425,9 +425,9 @@
  }
 
  .img06 img {
-    object-position: 50% 44%;
+     object-position: 50% 44%;
  }
- 
+
  .work__info {
      padding: 2rem;
      display: flex;
@@ -444,8 +444,8 @@
      background-color: var(--color-blau-links);
  }
 
- .blue__color{
-    background-color: var(--color-blau-links);
+ .blue__color {
+     background-color: var(--color-blau-links);
  }
 
  /* aparición página */
@@ -508,15 +508,15 @@
  /************************* INICI PÀGINA PROJECTES *************************/
 
 
- .wrapper__project{
-    width: 100%;
-    /* min-height: 100vh; */
-    margin-top: 6rem;
+ .wrapper__project {
+     width: 100%;
+     /* min-height: 100vh; */
+     margin-top: 6rem;
  }
 
-  /* CARRUSEL */
+ /* CARRUSEL */
  .carousel {
-    /* background-color: rgba(253, 253, 60, 0.802); */
+     /* background-color: rgba(253, 253, 60, 0.802); */
      width: 50%;
      position: relative;
      overflow: hidden;
@@ -592,34 +592,47 @@
 
  /* ************************ PÀGINA INFO *************************/
 
+ .main__info {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     min-height: 90vh;
 
-.div__redes{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.div__redes a{
-    text-align: center;
-    background-color:  #fbfb87;
-}
-
- @media (max-width: 300px){
-    .main__info, .div__redes{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .p__info{
-        margin-bottom: 2rem;
-    }
-
-    .div__redes{
-        gap: 1rem;
-    }
+     padding: 2rem;
  }
+
+ .div__redes {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .div__redes a {
+     text-align: center;
+     background-color: #fbfb87;
+ }
+
+ @media (max-width: 380px) {
+
+     .main__info,
+     .div__redes {
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+     }
+
+     .p__info {
+        font-size: 1.5em;
+         margin-bottom: 2rem;
+     }
+
+     .div__redes {
+         gap: 1rem;
+     }
+ }
+
  /******************** FIN PÀGINA INFO *********************/
 
 
@@ -868,8 +881,8 @@
          align-items: flex-start !important;
      }
 
-     .p__project{
-        font-size: 1.5em;
+     .p__project {
+         font-size: 1.5em;
      }
  }
 
